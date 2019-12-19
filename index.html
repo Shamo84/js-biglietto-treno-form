@@ -17,7 +17,7 @@
     </div>
     <div class="col">
       <label for="km">Km da Percorrere</label>
-      <input id="km" type="text" name="km" value="" placeholder="Km da percorrere">
+      <input id="km" type="number" name="km" value="" placeholder="Km da percorrere">
     </div>
     <div class="col">
       <label for="fascia_eta">Fascia d'et&agrave;</label>
@@ -31,18 +31,18 @@
     <button id="annulla" type="button" name="annulla" class="btn">annulla</button>
   </div>
   <h2>il tuo biglietto</h2>
-  <div id="ticket" class="container">
-    <h3 id="dettaglio_passeggeri">dettglio passeggeri</h3>
+  <div id="ticket" class="container hidden">
+    <h3 id="dettaglio_passeggeri">dettaglio passeggeri</h3>
     <div id="ticket_border">
       <div id="passenger_square">
-        <h3>nome passeggero</h3>
+        <h3>NOME PASSEGGERO</h3>
         <div id="nome_passeggero">
 
         </div>
       </div>
       <div id="tabella">
         <table>
-          <thead>
+          <thead id="table_head">
             <tr>
               <th>Offerta</th>
               <th>Carrozza</th>

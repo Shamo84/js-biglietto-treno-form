@@ -15,11 +15,10 @@ h2 {
   margin: 20px 0;
 }
 .display {
-  display: block;
+  opacity: 1;
 }
 .hidden {
-  display: none;
-  transition-duration: 1s;
+  opacity: 0;
 }
 .container {
   width: 70%;
@@ -58,6 +57,7 @@ h2 {
 }
 #ticket {
   padding: 20px 20px;
+  transition-duration: 2s;
 }
 #dettaglio_passeggeri {
   text-align: left;
@@ -72,6 +72,9 @@ h2 {
   display: table;
   content: "";
   clear: both;
+}
+#table_head th{
+  padding-bottom: 50px;
 }
 #passenger_square {
   height: 100%;

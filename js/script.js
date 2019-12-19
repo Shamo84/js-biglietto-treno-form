@@ -1,5 +1,7 @@
 var euroKm = 0.21;
 
+
+// PULSANTE GENERA
 var genera = document.getElementById('genera');
 genera.addEventListener("click",
   function () {
@@ -28,12 +30,14 @@ genera.addEventListener("click",
   document.getElementById('carrozza').innerHTML = carrozza;
   var cp = Math.floor(Math.random() * 10000 + 90000 );
   document.getElementById('codice_cp').innerHTML = cp;
-  document.getElementById('costo_biglietto').innerHTML = prezzoBiglietto;
+  document.getElementById('costo_biglietto').innerHTML = prezzoBiglietto.toFixed(2);
 
   document.getElementById('ticket').classList.remove("hidden");
   document.getElementById('ticket').classList.add("display");
   }
 )
+
+// PULSANTE ANNULLA
 var annulla = document.getElementById('annulla');
 annulla.addEventListener("click",
   function () {
@@ -48,7 +52,5 @@ annulla.addEventListener("click",
   document.getElementById('carrozza').innerHTML = ("");
   document.getElementById('codice_cp').innerHTML = ("");
   document.getElementById('costo_biglietto').innerHTML = ("");
-
-
   }
 )
