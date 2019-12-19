@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: pink;
+  text-align: center;
+}
+h2 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.display {
+  display: block;
+}
+.hidden {
+  display: none;
+  transition-duration: 1s;
+}
+.container {
+  width: 70%;
+  height: 220px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 40px 200px;
+}
+.col {
+  display: inline-block;
+  width: 200px;
+}
+.col input,
+.col select {
+  border-radius: 5px;
+  border-color: pink;
+  height: 25px;
+  margin: 20px 0;
+}
+.col select {
+  width: 120px;
+}
+#nome::placeholder {
+  text-align: center;
+}
+#km::placeholder {
+  text-align: center;
+}
+.btn {
+  font-size: 25px;
+  margin: 20px;
+  border-radius: 5px;
+  color: red;
+  padding: 5px 10px;
+}
+#ticket {
+  padding: 20px 20px;
+}
+#dettaglio_passeggeri {
+  text-align: left;
+}
+#ticket_border {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  height: 85%;
+
+}
+#ticket_border::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+#passenger_square {
+  height: 100%;
+  width: 20%;
+  float: left;
+  background-color: lightgrey;
+}
+#tabella {
+  float: left;
+  padding: 20px;
+}
+#tabella th {
+  width: 150px;
+}
