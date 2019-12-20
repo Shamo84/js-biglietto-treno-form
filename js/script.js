@@ -12,7 +12,7 @@ genera.addEventListener("click",
     var fasciaEta = document.getElementById('fascia_eta').value;
     console.log(fasciaEta);
 
-    if (nomeCognome.length == 0 || isNaN(km) || km <= 0 ) {
+    if (nomeCognome.length == 0 || !isNaN(nomeCognome) || isNaN(km) || km <= 0 ) {
       alert("controlla i dati inseriti!");
     } else {
       document.getElementById('nome_passeggero').innerHTML = nomeCognome;
