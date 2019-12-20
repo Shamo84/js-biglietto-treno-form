@@ -30,7 +30,7 @@ genera.addEventListener("click",
   document.getElementById('carrozza').innerHTML = carrozza;
   var cp = Math.floor(Math.random() * 10000 + 90000 );
   document.getElementById('codice_cp').innerHTML = cp;
-  document.getElementById('costo_biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+  document.getElementById('costo_biglietto').innerHTML = prezzoBiglietto.toFixed(2) + ' €';
 
   document.getElementById('ticket').classList.remove("hidden");
   document.getElementById('ticket').classList.add("display");
